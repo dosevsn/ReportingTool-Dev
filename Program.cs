@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 
-string conn = builder.Configuration.GetConnectionString("ReportingDb");
+string conn = builder.Configuration.GetConnectionString("ReportingDatabase");
 
 builder.Services.AddSqlServer<FMCContext>(conn);
 
