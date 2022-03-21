@@ -1,0 +1,23 @@
+<p>test-table works!</p>
+
+
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
+    <thead>
+        <tr>
+            <th>CustomerId</th>
+            <th>First Name</th>
+            <th>PaymentDays</th>
+            <th>Phone Number</th>
+            <th>Fax Number</th>
+
+          </tr>     
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of data">
+            <td>{{customer.customerId}}</td>
+            <td>{{ customer.customerName }}</td>
+            <td>{{ customer.paymentDays }}</td>
+            <td>{{ customer.phoneNumber }}</td>
+            <td>{{ customer.faxNumber }}</td>
+    </tbody>
+  </table>
