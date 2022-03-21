@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Me",
+    "classifications": [ "Web", "Angular" ],
+    "identity": "Reporting Template",
+    "name": "Reporting Template",
+    "shortName": "reporting",
+    "tags": {
+      "language": "C#",
+      "type": "project"
+    },
+    "sourceName": "AngularReporting",
+    "preferNameDirectory": true,
+    "symbols": {          
+      "ProjectName": {
+              "type": "parameter",
+              "replaces": "PROJECT_NAME",
+              "FileRename": "PROJECT_NAME"			
+          }
+      }
+  }
